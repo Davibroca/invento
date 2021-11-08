@@ -2,7 +2,7 @@ import os
 import glob
 import cv2
 from bing_image_downloader import downloader
-query_string = input("Input Query")
+query_string = input("Input Query : ")
 downloader.download(query_string, limit=10,  output_dir= 'dataset')
 loc = os.getcwd()
 path = loc + '/dataset/' + query_string
